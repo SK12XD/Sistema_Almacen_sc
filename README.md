@@ -1,9 +1,7 @@
 # Sistema de Almacén
-
 Practica de sistema de gestión de inventarios, con MySQL y con el uso del WampServer.
 
-## Estructura de la Base de Datos
-
+## Base de datos
 ### Nombre: `inventario_db`
 ### Tabla: `productos`
 ```sql
