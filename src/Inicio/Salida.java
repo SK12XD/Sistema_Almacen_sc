@@ -3,24 +3,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Inicio;
+
 /**
  *
  * @author Chavez
  */
-public class Menu extends javax.swing.JFrame {
+public class Salida extends javax.swing.JFrame {
+
     /**
-     * Creates new form Menu
+     * Creates new form Salida
      */
-    public Menu() {
+    public Salida() {
         initComponents();
-        agregarEventos();
-    }
-    private void agregarEventos() {
-        jHerramientas.addActionListener(evt -> {
-            Herramientas herramientas = new Herramientas();
-            herramientas.setVisible(true);
-            this.dispose();
-        });
     }
 
     /**
@@ -32,39 +26,17 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        JMenuBar = new javax.swing.JMenuBar();
-        JMenuPrincipal = new javax.swing.JMenu();
-        jHerramientas = new javax.swing.JMenuItem();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel1.setText("EN PROCESO :)");
-
-        JMenuPrincipal.setText("Principal");
-
-        jHerramientas.setText("Herramientas");
-        JMenuPrincipal.add(jHerramientas);
-
-        JMenuBar.add(JMenuPrincipal);
-
-        setJMenuBar(JMenuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel1)
-                .addContainerGap(300, Short.MAX_VALUE))
+            .addGap(0, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(233, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(28, 28, 28))
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         pack();
@@ -86,23 +58,25 @@ public class Menu extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Salida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Salida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Salida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Salida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> {
-            new Menu().setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Salida().setVisible(true);
+            }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuBar JMenuBar;
-    private javax.swing.JMenu JMenuPrincipal;
-    private javax.swing.JMenuItem jHerramientas;
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
